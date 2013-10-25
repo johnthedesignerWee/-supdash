@@ -20,34 +20,31 @@
                         </select>
                     </td>
                     <td>
-                        <select name="division" class="default" tabindex="2">
-                            <option value="">Division 1</option>
-                            <option value="AU">Australia</option>
-                            <option value="CA">Canada</option>
-                            <option value="DE">Germany</option>
-            			</select>
-                    </td>
-                    <td>
                         <select name="complex" class="default" tabindex="2">
-							<option value="">Complex 1</option>
-              				<option value="AU">Australia</option>
-              				<option value="CA">Canada</option>
-              				<option value="DE">Germany</option>
-              				<option value="JP">Japan</option>
+                            <option value="">Select a Complex</option>
+                            <option value="">Fairfield County</option>
+                            <option value="">Florham Park</option>
+                            <option value="">Garden City</option>
+                            <option value="">Melville</option>
+                            <option value="">NYC-TS</option>
+                            <option value="">NYC-NE</option>
+                            <option value="">NYC-UT</option>
+                            <option value="">NYC-WE</option>
+                            <option value="">NYC-1285</option>
+                            <option value="">101 Park Ave</option>
             			</select>
                     </td>
                     <td>
-                         <select name="branch" class="default" tabindex="2">
-							<option value="">Branch 1</option>
-              				<option value="AU">Australia</option>
-              				<option value="CA">Canada</option>
-              				<option value="DE">Germany</option>
-              				<option value="JP">Japan</option>
+                        <select name="branch" class="default" tabindex="2">
+							<option value="">Select a Branch</option>
+              				<option value="">Samford, CT</option>
+              				<option value="">Greenwich, CT</option>
+              				<option value="">Westport, CT</option>
             			</select>
                     </td>
                     <td>
-                         <select name="date" class="default" tabindex="2">
-							<option value="">mm/dd/yy</option>
+                         <select name="FAID" class="default" tabindex="2">
+							<option value="">FAID</option>
               				<option value="AU">Australia</option>
               				<option value="CA">Canada</option>
               				<option value="DE">Germany</option>

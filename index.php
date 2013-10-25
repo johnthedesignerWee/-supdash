@@ -1,10 +1,10 @@
-<!doctype html>
+	<!doctype html>
 <?php $thisPage="Home"; ?>
 <html>
 
 <head>
     <meta charset="UTF-8">
-    <title>BMSS Sandbox</title>
+    <title>Supervisory Dashboard</title>
     <meta name="viewport" content="width=1024">
     <link rel="stylesheet" href="styles/supdash-styles.css"/>
     <link rel="stylesheet" href="styles/tooltipster.css"/>
@@ -20,12 +20,16 @@
     <?php include_once("_includes/topnav.php"); ?>
     
     <div class="row">
-        <div class="col9 overview test">
+        <div class="col9 overview">
             <h1>Overview </h1>
             <?php include_once("_includes/overview-filters.php"); ?>
+            
             // overview here...
+            
+            <?php include_once("_includes/overview-datagridcontainer.php"); ?>
+            
         </div>
-        <div class="col3 communication test">
+        <div class="col3 communication">
             <h1>From Communications Team </h1>
             // Communications here...
         </div>
@@ -36,7 +40,8 @@
          <div class="flags">
             // flags here...
          </div>
-        <?php include_once("_includes/performance-filters.php"); ?>
+            <?php include_once("_includes/performance-selector.php"); ?>
+        	<?php include_once("_includes/performance-filters.php"); ?>
         
             // performance indicators here...
         
