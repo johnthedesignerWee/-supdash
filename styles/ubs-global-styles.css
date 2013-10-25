@@ -234,6 +234,158 @@ a.button.icon.mm.disabled {
 .dropdown:hover:after {
 		   border-top-color: #556996;
 }
+
+.dropdown.primary {
+	color: #fff;
+	background: -moz-linear-gradient(top, #b3bfdb, #3c5da6);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0, #b3bfdb),color-stop(1, #3c5da6));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#b3bfdb', EndColorStr='#3c5da6');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#b3bfdb', EndColorStr='#3c5da6')";
+	text-shadow: none;
+	border: 1px solid #556996;
+}
+
+
+.dropdown.primary:after { border-top: 4px solid #fff; }
+
+.dropdown.primary:active {
+		   border: 1px solid #21354F;
+		   border-bottom-color: #21354F;
+		   border-top-color: #21354F;
+		   -webkit-box-shadow: inset 0 1px 2px #21354F;
+		   -moz-box-shadow:    inset 0 1px 2px #21354F;
+		   box-shadow:         inset 0 1px 2px #21354F;
+			background-image: -moz-linear-gradient(top, #3c5da6, #7384ab);
+			background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #7384ab),color-stop(1, #3c5da6));
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#7384ab', EndColorStr='#3c5da6');
+			-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#7384ab', EndColorStr='#3c5da6')";
+}
+
+.sortable:after {
+			content: "";
+		   display: inline-block;
+		   width: 0;
+		   height: 0;
+		   border-top: 4px solid #556996;
+		   border-left: 4px solid transparent;
+		   border-right: 4px solid transparent;
+		   margin: 0 0 0 4px;
+		   position: relative;
+		   top: -1px;
+}
+
+.sortable:hover:after, .selected.sortable:after{
+
+		   border-top: 4px solid #fff;
+
+}
+
+
+/************ MENU **************/
+.v-menu {
+	border: 1px solid red;
+	white-space: nowrap;
+	z-index:20;
+	position: absolute;
+	left:0px;
+	background-color: #fff;
+	border: 1px solid #C9C9C9;
+	-moz-border-radius: 0 4px 4px 4px;
+	-webkit-border-radius: 0 4px 4px 4px;
+	border-radius: 0 4px 4px 4px;
+	-moz-box-shadow: 0px 0px 2px rgba(68,68,68,0.3);
+	-webkit-box-shadow: 0px 0px 2px rgba(68,68,68,0.3);
+	box-shadow: 0px 0px 2px rgba(68,68,68,0.3);
+}
+
+.v-menu ul, .v-menu .secondry ul { margin-bottom: 12px;}
+.v-menu ul li {
+    display:block;
+	padding: 8px 30px 8px 4px;
+	border-bottom: 1px solid #c9c9c9;
+	margin: 0 0 0 8px;
+}
+
+.v-menu ul li:hover {
+  	background-color:#556996;
+	font-weight:bold;
+	color:#fff;
+	cursor:pointer;
+}
+
+.v-menu  ul ul li:hover a {
+	color:#fff;
+}
+
+.v-menu  ul ul { display: none; }
+.v-menu .secondry {
+	position: relative;
+}
+
+.secondry ul { 
+	left: 114px;
+	top: 0px;
+	position: absolute;
+	background-color: #fff;
+	border: 1px solid #C9C9C9;
+	 }
+
+.v-menu .header { 
+	font-weight: bold; 
+	border-bottom: none;
+	padding-left: 0px; 
+	padding-bottom: 4px;
+	margin-top: 11px;
+	color: #949494;	
+}
+.v-menu .header:hover { 
+	background-color: inherit;
+	color: #949494;	
+ }
+.v-menu .secondry:after {
+	content: "";
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-top: 4px solid transparent;
+	border-left: 4px solid #556996;
+	border-bottom: 4px solid transparent; 
+	margin: 0 0 0 4px;
+	position: relative;
+}
+.v-menu .secondry:hover:after{
+	border-left: 4px solid #fff;
+}
+
+.v-menu .secondry:hover ul {
+	display: block;
+
+}
+
+.v-menu .secondry ul {
+	-moz-border-radius: 0 4px 4px 4px;
+	-webkit-border-radius: 0 4px 4px 4px;
+	border-radius: 0 4px 4px 4px;
+	-moz-box-shadow: 0px 0px 2px rgba(68,68,68,0.3);
+	-webkit-box-shadow: 0px 0px 2px rgba(68,68,68,0.3);
+	box-shadow: 0px 0px 2px rgba(68,68,68,0.3);
+}
+
+.v-menu .secondry ul li {
+		padding: 8px 30px 8px 8px;
+		margin: 0;
+		color: #2e2e2e;
+		font-weight: normal;
+}
+
+.v-menu .secondry ul li:hover {
+	color:#fff;
+	font-weight: bold;
+}
+
+.v-menu [class*="icon-"]{
+	margin-left: 6px;
+}
 		
 /* Flat dropdowns */
 
@@ -263,6 +415,59 @@ input[type=checkbox].chkbox:checked + label.chkbox-label {
 	background-position: 0 -22px;
 }
 .chkbox-label{ background-image:url(../images/chk.png); }
+
+/* @ ButtonBar */
+
+.button-bar a.button {
+	padding: 6px 10px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px; /* top left, top right, bottom right, bottom left */
+	color: #556996;
+	background: #fff;
+	background-image: -moz-linear-gradient(top, #ffffff, #d0d0d0); /* Firefox 3.6 */
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #d0d0d0),color-stop(1, #ffffff)); /* Safari & Chrome */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#d0d0d0')"; /* IE8 */
+	text-shadow: none;
+	display:inline-block;
+	margin:0;
+	border-left: none;
+}
+
+.button-bar a.button.first {
+	-webkit-border-radius: 4px 0px 0px 4px;
+	-moz-border-radius: 4px 0px 0px 4px;
+	border-radius: 4px 0px 0px 4px; /* top left, top right, bottom right, bottom left */
+	border-right: none;
+}
+
+.button-bar a.button.last {
+	-webkit-border-radius: 4px 0px 0px 4px;
+	-moz-border-radius: 4px 0px 0px 4px;
+	border-radius: 0px 4px 4px 0px; /* top left, top right, bottom right, bottom left */
+	border-left: none;
+	
+}
+
+.button-bar a.button:hover {
+	background-image: -moz-linear-gradient(top, #b3bfdb, #3c5da6);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #b3bfdb),color-stop(1, #3c5da6));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#b3bfdb', EndColorStr='#3c5da6');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#b3bfdb', EndColorStr='#3c5da6')";
+	color: #fff;
+}
+
+.button-bar a.button:active, .button-bar a.button.selected {
+	background-image: -moz-linear-gradient(top, #3c5da6, #7384ab);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #7384ab),color-stop(1, #3c5da6));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#7384ab', EndColorStr='#3c5da6');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#7384ab', EndColorStr='#3c5da6')";
+	color: #fff;
+	border: 1px solid #21354F;
+
+}
+
+/* @end */
 
 
 
@@ -449,214 +654,92 @@ div.col12 { width: 978px; }
 /***********************ICONS***********************/
 
 @font-face {
-	font-family: 'UBS-global-Icons';
-	src:url('../fonts/UBS-global-Icons.eot');
-	src:url('../fonts/UBS-global-Icons.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/UBS-global-Icons.woff') format('woff'),
-		url('../fonts/UBS-global-Icons.ttf') format('truetype'),
-		url('../fonts/UBS-global-Icons.svg#UBS-global-Icons') format('svg');
+	font-family: 'UBS-Global-Icons';
+	src:url('../fonts/UBS-Global-Icons.eot');
+	src:url('../fonts/UBS-Global-Icons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/UBS-Global-Icons.ttf') format('truetype'),
+		url('../fonts/UBS-Global-Icons.woff') format('woff'),
+		url('../fonts/UBS-Global-Icons.svg#UBS-Global-Icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
-
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
-[data-icon]:before {
-	font-family: 'UBS-global-Icons';
-	content: attr(data-icon);
+[class*="icon-"] {
+	font-family: 'UBS-Global-Icons';
 	speak: none;
+	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
+
+	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-/* Use the following CSS code if you want to have a class per icon */
-/*
-Instead of a list of all class selectors,
-you can use the generic selector below, but it's slower:
-[class*="icon-"] {
-*/
-.icon-Zoom-in, .icon-Portfolio, .icon-Subtract, .icon-Add, .icon-Search, .icon-Question, .icon-Exclamation, .icon-Close, .icon-share, .icon-chat, .icon-migrate, .icon-Trash, .icon-Add-List, .icon-chart-alt, .icon-Back, .icon-Next, .icon-Expand, .icon-pencil, .icon-Exclamation-2, .icon-Exclamation-outline, .icon-AddList, .icon-Add-2, .icon-Subtract-2, .icon-Excel, .icon-Collapse, .icon-views, .icon-new-window, .icon-calendar, .icon-email, .icon-Globe, .icon-filter, .icon-checkmark-circle, .icon-flag, .icon-forward, .icon-bolt, .icon-user, .icon-bookmark, .icon-home, .icon-warning, .icon-arrow-up, .icon-arrow-down, .icon-arrow-up-2, .icon-minus, .icon-grid, .icon-x, .icon-Zoom-out, .icon-eject, .icon-down-small-arrow, .icon-mm-dropdown, .icon-plus, .icon-cross, .icon-minus-2, .icon-plus-2, .icon-check-alt, .icon-x-altx-alt, .icon-checkmark, .icon-document-alt-stroke {
-	font-family: 'UBS-global-Icons';
+/[class*="icon-"] {
+	font-family: 'UBS-Global-Icons';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
+
+	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
-.icon-Zoom-in:before {
-	content: "\e002";
+
+.icon-search:before {
+	content: "\e600";
 }
-.icon-Portfolio:before {
-	content: "\e007";
+.icon-zoom-in:before {
+	content: "\e601";
 }
-.icon-Subtract:before {
-	content: "\e02f";
+.icon-zoom-out:before {
+	content: "\e602";
 }
-.icon-Add:before {
-	content: "\e004";
+.icon-add:before {
+	content: "\e603";
 }
-.icon-Search:before {
-	content: "\e005";
+.icon-subtract:before {
+	content: "\e604";
 }
-.icon-Question:before {
-	content: "\e006";
+.icon-exclamation:before {
+	content: "\e605";
 }
-.icon-Exclamation:before {
-	content: "\e008";
+.icon-question:before {
+	content: "\e606";
 }
-.icon-Close:before {
-	content: "\e009";
+.icon-close:before {
+	content: "\e607";
 }
-.icon-share:before {
-	content: "\e00c";
+.icon-spinner:before {
+	content: "\e608";
+}
+.icon-portfolio:before {
+	content: "\e609";
+}
+.icon-comments:before {
+	content: "\e60a";
 }
 .icon-chat:before {
-	content: "\e00d";
-}
-.icon-migrate:before {
-	content: "\e039";
-}
-.icon-Trash:before {
-	content: "\e001";
-}
-.icon-Add-List:before {
-	content: "\e00e";
-}
-.icon-chart-alt:before {
-	content: "\e015";
-}
-.icon-Back:before {
-	content: "\e014";
-}
-.icon-Next:before {
-	content: "\e016";
-}
-.icon-Expand:before {
-	content: "\e00f";
-}
-.icon-pencil:before {
-	content: "\e017";
-}
-.icon-Exclamation-2:before {
-	content: "\e011";
-}
-.icon-Exclamation-outline:before {
-	content: "\e012";
-}
-.icon-AddList:before {
-	content: "\e013";
-}
-.icon-Add-2:before {
-	content: "\e018";
-}
-.icon-Subtract-2:before {
-	content: "\e019";
-}
-.icon-Excel:before {
-	content: "\e01a";
-}
-.icon-Collapse:before {
-	content: "\e00a";
-}
-.icon-views:before {
-	content: "\e01b";
-}
-.icon-new-window:before {
-	content: "\e01c";
-}
-.icon-calendar:before {
-	content: "\e01e";
-}
-.icon-email:before {
-	content: "\e01f";
-}
-.icon-Globe:before {
-	content: "\e022";
-}
-.icon-filter:before {
-	content: "\e023";
-}
-.icon-checkmark-circle:before {
-	content: "\e024";
-}
-.icon-flag:before {
-	content: "\e010";
-}
-.icon-forward:before {
-	content: "\e025";
-}
-.icon-bolt:before {
-	content: "\e020";
+	content: "\e60b";
 }
 .icon-user:before {
-	content: "\e021";
+	content: "\e60c";
 }
-.icon-bookmark:before {
-	content: "\e026";
+.icon-users:before {
+	content: "\e60d";
 }
 .icon-home:before {
-	content: "\e00b";
+	content: "\e60e";
 }
-.icon-warning:before {
-	content: "\e027";
+.icon-cog:before {
+	content: "\e60f";
 }
-.icon-arrow-up:before {
-	content: "\e028";
-}
-.icon-arrow-down:before {
-	content: "\e029";
-}
-.icon-arrow-up-2:before {
-	content: "\e02a";
-}
-.icon-minus:before {
-	content: "\e02b";
-}
-.icon-grid:before {
-	content: "\e02d";
-}
-.icon-x:before {
-	content: "\e02e";
-}
-.icon-Zoom-out:before {
-	content: "\e000";
-}
-.icon-eject:before {
-	content: "\e01d";
-}
-.icon-down-small-arrow:before {
-	content: "\e003";
-}
-.icon-mm-dropdown:before {
-	content: "\e030";
-}
-.icon-plus:before {
-	content: "\e032";
-}
-.icon-cross:before {
-	content: "\e033";
-}
-.icon-minus-2:before {
-	content: "\e034";
-}
-.icon-plus-2:before {
-	content: "\e031";
-}
-.icon-check-alt:before {
-	content: "\e035";
-}
-.icon-x-altx-alt:before {
-	content: "\e036";
-}
-.icon-checkmark:before {
-	content: "\e037";
-}
-.icon-document-alt-stroke:before {
-	content: "\e038";
+.icon-pie:before {
+	content: "\e610";
 }

@@ -1,16 +1,14 @@
 
-<div class="row filters" >
+<div class="filters" >
             
 	<fieldset>
 		<form action="#" method="post" accept-charset="utf-8" class="example_form">
         	<table>
             	<tr>
-                	<th><span class="label">REGION</span></th>
-                    <th><span class="label">DIVISION</span></th>
+                    <th>&nbsp;</th>
                     <th><span class="label">COMPLEX</span></th>
                     <th><span class="label">BRANCH</span></th>
-                    <th><span class="label">DATE</span></th>
-                    <th>&nbsp;</th>
+                    <th><span class="label">FAID</span></th>
                 </tr>
                 <tr>
                 	<td>

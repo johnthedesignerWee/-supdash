@@ -65,27 +65,15 @@ textarea {
 }
 	
 /* sticky */
-.actions-footer {
-	width: 978px;
-	margin: 40px auto 0 auto;
-	height:52px;
-	border-top: 1px solid #d7d7d7;
-	background: #fff;
-}
-	
-.actions {
-	width: 100%;
-	margin:12px 0 12px 12px;
-}
-.actions .icon-chat { color:#fff; }
-.bmss-footer {
+
+.supdash-footer {
 	border-top: 1px solid #d7d7d7;
 	width: 978px;
 	height: 52px; 
 	margin: 0px auto;
 }
 
-.bmss-footer p {
+.supdash-footer p {
 	padding: 12px;
 }
 
@@ -225,73 +213,15 @@ td .icon-flag { color:#556996;}
 /**************************************************
 						 $topnav 
 **************************************************/
-.topnav>ul { margin-top: 23px;}
-.topnav ul ul { display: none; }
-.topnav>ul>li { position: relative; padding-right: 48px; }
-.topnav ul li a { 
-  	font-size: 14px;
-	font-weight: bold;
-	color: #949494;
-	padding-bottom: 2px; 
-  	text-decoration: none;
-  	position: relative;
-}
+.topnav { margin-top: 12px;}
 
-.topnav>ul>li>a:hover, .topnav>ul>li:hover>a, .topnav>ul>li a.active { 
-  color: #21354f;
-  border-bottom: 3px solid #21354f; 
-} 
 
-.topnav ul li:hover > ul { display: block; }
 
-.topnav>ul>li { 
-    list-style: none; 
-    display: inline;
-}
-
-.topnav ul ul, .buckets ul { 
-	white-space: nowrap;
-	z-index:20;
-	position: absolute;
-	left:0px;
-	background-color: #fff;
-	border: 1px solid #C9C9C9;
-	margin-top: 4px !important;
-	-moz-border-radius: 0 4px 4px 4px;
-	-webkit-border-radius: 0 4px 4px 4px;
-	border-radius: 0 4px 4px 4px;
-	-moz-box-shadow: 0px 0px 2px rgba(68,68,68,0.3);
-	-webkit-box-shadow: 0px 0px 2px rgba(68,68,68,0.3);
-	box-shadow: 0px 0px 2px rgba(68,68,68,0.3);
-}
-
-.topnav ul ul li, .buckets ul li {
-    display:block;
-	padding: 8px 30px 8px 8px;
-	border-bottom: 1px solid #c9c9c9;
-}
-
-.topnav ul ul li a { 
-  font-size:11px; 
-  color:#2e2e2e;
-  fnt-weight: normal;
-}
-
-.topnav ul ul li:hover, .buckets ul li:hover {
-  	background-color:#556996;
-	font-weight:bold;
-	color:#fff;
-	cursor:pointer;
-}
-
-.topnav ul ul li:hover a {
-	color:#fff;
-}
 
 /**********************************************
 						$filters 
 *********************************************/
-.filters, .bmss-footer, .send2fa-metas {
+.filters, .supdash-footer, .send2fa-metas {
 	background: url('../images/pattern-head-gray.png') repeat 0 0;
 	position:relative;
 }

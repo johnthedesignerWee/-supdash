@@ -1,12 +1,14 @@
 
 <div class="row topnav" >
-            <ul>
-                <li><a <?php if ($thisPage=="Home") echo "class=\"active\""; ?> href="index.php"><span class="icon-home"></span>BMSS</a></li>
-                <li><a <?php if ($thisPage=="Reports") echo "class=\"active\""; ?> href="reports.php">Reports</a></li>
-                <li><a <?php if ($thisPage=="Follow-up") echo "class=\"active\""; ?> href="follow-up.php">For Follow-up&nbsp;<span class="label red">(23 NEW)</span></a></a></li>
-                <li><a <?php if ($thisPage=="Comments") echo "class=\"active\""; ?> href="comments.php">Comments</a></li>
-                <li><a href="#">Tools</a><?php include_once("_includes/tools-menu.php"); ?></li>
-            </ul>
+   <div class="button-bar">
+   		<a class="button sortable first selected" href="#"><span>My Workspace</span></a>
+   		<a class="button sortable" href="#"><span>Approvals</span></a>
+   		<a class="button" href="#"><span>Worklist</span></a> 
+   		<a class="button" href="#"><span>Disbursements</span></a>   
+   		<a class="button" href="#"><span>Reports</span></a>
+   		<a class="button" href="#"><span>Documents</span></a> 
+   		<a class="button last" href="admin.php"><span>Admin</span></a>              
+    </div>
 </div>
 
 
