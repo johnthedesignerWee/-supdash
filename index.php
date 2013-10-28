@@ -30,8 +30,11 @@
             
         </div>
         <div class="col3 communication">
-            <h1>From Communications Team </h1>
+            <h1>From the Communications Team </h1>
             // Communications here...
+            
+			<?php include_once("_includes/comms.php"); ?>
+            
         </div>
         <div class="row-end">&nbsp;</div>
     </div>

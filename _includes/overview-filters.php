@@ -12,8 +12,8 @@
                 </tr>
                 <tr>
                 	<td>
-                        <select name="region" class="default" tabindex="2">
-                            <option value="">Region 1</option>
+                        <select name="toggle" class="default" tabindex="2">
+                            <option value="">ReplaceWithToggle</option>
                             <option value="AU">Australia</option>
                             <option value="CA">Canada</option>
                             <option value="DE">Germany</option>
