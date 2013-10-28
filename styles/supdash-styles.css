@@ -2,6 +2,7 @@
 /* CSS Document */
 
 @import 'ubs-global-styles.css';
+@import 'icons.css';
 
 @import 'dropkick.css';
 
@@ -256,14 +257,23 @@ fieldset { border: none; padding:0;}
 .filters .icon-calendar { font-size: 15px; color: #949494; }
 .filters .icon-calendar:hover { color: #556996; cursor: pointer; }
 /******************************************
-			$titlebar 
+			$messages 
 ********************************************/
-.titlebar {
+
+.messages {margin-top: 60px;}
+.message {
 	background: #fff;
 	border-top: 1px solid #d7d7d7;
 	border-bottom: 1px solid #d7d7d7;
-	height: 68px;
+	height: 30px;
 	position:relative;
+}
+.message .actions {
+	position:absolute;
+	top:2px;
+	right: 8px;
+	width:180px;
+	border: 1px solid red;
 }
 .titlebar.comments {
 	padding: 12px;

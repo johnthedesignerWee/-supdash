@@ -19,18 +19,25 @@
 <div class="layout-978">
     <?php include_once("_includes/topnav.php"); ?>
     
-    <div class="row">
-        <div class="test">
-            <h1>Messages </h1>
-         
-            // admin stuff here...
+    <div class="row messages">
+        <div class="message">
+            <span class="label">Oct 13, 2012</span>
+            <p>Messages, Sample </p>
+            <div class="actions"><span class="edit"> EDIT</span><span class="icon-cross"></span></div>
         </div>
+        <div class="message">
+            <span class="label">Oct 13, 2012</span>
+            <p>Messages, Sample </p>
+            <div class="actions"><span class="edit"> EDIT</span><span class=" icon-cross"></span></div>
+        </div>
+         
         
-        <div class="row-end">&nbsp;</div>
     </div>
-    
+        
     
 </div>
+    
+
 <?php include_once("_includes/footer.php"); ?>
 
 </body>
