@@ -216,14 +216,32 @@ td .icon-flag { color:#556996;}
 **************************************************/
 .topnav { margin-top: 12px;}
 
+/******************************************
+			$overview box 
+********************************************/
+.overview, .comms {
+	margin-top: 24px;
+	-moz-border-radius: 4px 4px 0 0;
+	-webkit-border-radius:  4px 4px 0 0;
+	border-radius:  4px 4px 0 0; /* future proofing */
+	-khtml-border-radius:  4px 4px 0 0; /* for old Konqueror browsers */
+}
+.overview { background:url('../images/tilebg-overviewtop.png') repeat-x;}
+.comms { background:url('../images/tilebg-commstop.png') repeat-x;}
 
+.overview h1, .comms h1 {
+	font-size: 15px; 
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #2e2e2e;
+	margin: 8px 0 4px 8px;
+}
 
 
 /**********************************************
 						$filters 
 *********************************************/
-.filters, .supdash-footer, .send2fa-metas {
-	background: url('../images/pattern-head-gray.png') repeat 0 0;
+.filters, .supdash-footer {
+	background: url('../images/pattern-head-gray.png') 0 0;
 	position:relative;
 }
 .filters { height: 54px; margin-top: 5px; }
@@ -256,6 +274,17 @@ fieldset { border: none; padding:0;}
 #start-date, #end-date { width: 100px; }
 .filters .icon-calendar { font-size: 15px; color: #949494; }
 .filters .icon-calendar:hover { color: #556996; cursor: pointer; }
+
+
+
+/******************************************
+			$comms box 
+********************************************/
+
+
+
+
+
 /******************************************
 			$messages 
 ********************************************/
@@ -529,7 +558,6 @@ span.branch {
 
 div.col9 { 
 	width:742px;
-	background: url(../images/v-sep.png) no-repeat 726px 0;
 	 }
 div.col3 { margin-left: 4px;
 			width:230px;  }

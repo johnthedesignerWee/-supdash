@@ -1,8 +1,5 @@
-  <div class="comms">
-    <h3></h3>
-    <div id="commslist">
-    <span class="icon-spam"></span>
-    <span class="icon-info"></span>
+
+    
     <table class="comms-datagrid">
     <tbody>
       <tr>
@@ -24,7 +21,7 @@
               <td>Nov 02 | Attention Required</td>
               <td>CloseButtonHere</td>
             </tr
-            <tr>
+            ><tr>
               <td>3Q 2013 List of PMP accounts tracking toward termination and fee forfeiture on October 15</td>
             </tr>
           <tbody>
@@ -72,5 +69,4 @@
     
     
     
-    </div>
-  </div> <!-- x row -->
+

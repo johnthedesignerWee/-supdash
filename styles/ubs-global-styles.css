@@ -475,6 +475,7 @@ input[type=checkbox].chkbox:checked + label.chkbox-label {
 
 .datagrid {
 	border-collapse: collapse;
+	width:100%;
 }
 
 .datagrid thead tr th {

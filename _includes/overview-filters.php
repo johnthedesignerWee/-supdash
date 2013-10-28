@@ -12,12 +12,11 @@
                 </tr>
                 <tr>
                 	<td>
-                        <select name="toggle" class="default" tabindex="2">
-                            <option value="">ReplaceWithToggle</option>
-                            <option value="AU">Australia</option>
-                            <option value="CA">Canada</option>
-                            <option value="DE">Germany</option>
-                        </select>
+                        <div class="button-bar">
+                        	<a class="button first selected">My Primary Tasks</a>
+                            <a class="button last">All Tasks</a>
+                       	
+                        </div>
                     </td>
                     <td>
                         <select name="complex" class="default" tabindex="2">
