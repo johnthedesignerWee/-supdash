@@ -20,16 +20,15 @@
     <?php include_once("_includes/topnav.php"); ?>
     
     <div class="row">
-        <div class="col9 overview">
+        <div class="col9 overview box-shadow">
             <h1>Overview </h1>
             <?php include_once("_includes/overview-filters.php"); ?>
             
-            // overview here...
             
             <?php include_once("_includes/overview-datagridcontainer.php"); ?>
             
         </div>
-        <div class="col3 communication">
+        <div class="col3 comms box-shadow">
             <h1>From the Communications Team </h1>
             // Communications here...
             
