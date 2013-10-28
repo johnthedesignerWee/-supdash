@@ -5,31 +5,38 @@
 		<form action="#" method="post" accept-charset="utf-8" class="example_form">
         	<table>
             	<tr>
-                    <th>&nbsp;</th>
+                    
+                    <th><span class="label">START DATE</span></th>
+                    <th><span class="label">END DATE</span></th>
+                    <th><span class="label">FAID OR ACCOUNT NUMBER</span></th>
                     <th><span class="label">COMPLEX</span></th>
                     <th><span class="label">BRANCH</span></th>
-                    <th><span class="label">FAID</span></th>
+                    <th><span class="label">RED FLAGS</span></th>
+                    <th><span class="label"> </span></th>
                 </tr>
                 <tr>
                 	<td>
-                        <select name="region" class="default" tabindex="2">
-                            <option value="">Region 1</option>
-                            <option value="AU">Australia</option>
-                            <option value="CA">Canada</option>
-                            <option value="DE">Germany</option>
+                        <select name="from" class="default" tabindex="2">
+                            <option start-date="">From…</option>
                         </select>
                     </td>
                     <td>
-                        <select name="division" class="default" tabindex="2">
-                            <option value="">Division 1</option>
-                            <option value="AU">Australia</option>
-                            <option value="CA">Canada</option>
-                            <option value="DE">Germany</option>
+                        <select name="to" class="default" tabindex="2">
+                            <option end-date="">To…</option>
             			</select>
                     </td>
                     <td>
-                        <select name="complex" class="default" tabindex="2">
-							<option value="">Complex 1</option>
+                        <select name="account" class="default" tabindex="2">
+							<option value="">FAID or Account Number</option>
+              				<option value="AU">Australia</option>
+              				<option value="CA">Canada</option>
+              				<option value="DE">Germany</option>
+              				<option value="JP">Japan</option>
+            			</select>
+                    </td>
+                    <td>
+                         <select name="complex" class="default" tabindex="2">
+							<option value="">Select a Complex…</option>
               				<option value="AU">Australia</option>
               				<option value="CA">Canada</option>
               				<option value="DE">Germany</option>
@@ -38,7 +45,7 @@
                     </td>
                     <td>
                          <select name="branch" class="default" tabindex="2">
-							<option value="">Branch 1</option>
+							<option value="">Select a Branch…</option>
               				<option value="AU">Australia</option>
               				<option value="CA">Canada</option>
               				<option value="DE">Germany</option>
@@ -46,8 +53,8 @@
             			</select>
                     </td>
                     <td>
-                         <select name="date" class="default" tabindex="2">
-							<option value="">mm/dd/yy</option>
+                         <select name="redflags" class="default" tabindex="2">
+							<option value="">Red Flags…</option>
               				<option value="AU">Australia</option>
               				<option value="CA">Canada</option>
               				<option value="DE">Germany</option>
