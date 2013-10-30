@@ -56,7 +56,7 @@
                         <td class="cash">13</td>
                     </tr>
                      <tr class="overviewrow">
-                        <td> class="reportitem"Trade Correction Approvals/td>
+                        <td class="reportitem">Trade Correction Approvals</td>
                         <td class="icon-rcircle"> </td>
                         <td class="cash">18</td>
                         <td class="cash">28</td>
@@ -79,5 +79,17 @@
             
                 </tbody>
       </table>
-            
-         
+      <div class="mylinks">
+            <select name="mylinks" class="default" tabindex="2">
+            <option value="">My Links</option>
+            <option value="">Ipsum</option>
+            <option value="">Della</option>
+            <option value="">Fiore</option>
+            <option value="">Conne</option>
+            </select>
+
+		<div class="editlinks">
+			<span class="icon-edit"></span>
+            <a class="call-modal" href="#edit-links"><span aria-hidden="true"  class="icon-pencil"></span>Edit Links</a>
+		</div>
+      </div>

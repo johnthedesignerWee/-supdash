@@ -1,72 +1,37 @@
+<div>
+    <div class="communication">
+        <span class="label">Nov 01</span><span class="severity">Action Required</span>
+        <p class="message">3Q 2013 List of PMP accounts tracking toward termination and fee forfeiture on October 15</p>
+        </div>
+    
+    <div class="communication">
+        <span class="label">Nov 01</span><span class="severity">Attention Required</span>
+        <p class="message">3Q 2013 List of PMP accounts tracking toward termination and fee forfeiture on October 15</p>
+        </div>
+    
+    <div class="communication">
+        <span class="label">Nov 01</span>
+        <span class="severity">Action Required</span>
+        <p class="message">3Q 2013 List of PMP accounts tracking toward termination and fee forfeiture on October 15</p>
+        </div>
+    
+    <div class="communication">
+        <span class="label">Nov 01</span>
+        <span class="severity">Alert</span>
+        <p class="message">3Q 2013 List of PMP accounts tracking toward termination and fee forfeiture on October 15</p>
+        </div>
+    
+    <div class="communication">
+        <span class="label">Nov 01</span>
+        <span class="severity">Alert</span>
+        <p class="message">3Q 2013 List of PMP accounts tracking toward termination and fee forfeiture on October 15</p>
+        </div>
+</div>
 
-    
-    <table class="comms-datagrid">
-    <tbody>
-      <tr>
-        <td><table class="comms-datagrid">
-          <!-- Table body -->
-          <tbody>
-            <tr>
-              <td>Nov 01 | Attention Required</td>
-              <td>CloseButtonHere</td>
-            </tr>
-            <tr>
-              <td>3Q 2013 List of PMP accounts tracking toward termination and fee forfeiture on October 15</td>
-            </tr>
-          <tbody>
-          </tbody>
-          
-          <tbody>
-            <tr>
-              <td>Nov 02 | Attention Required</td>
-              <td>CloseButtonHere</td>
-            </tr
-            ><tr>
-              <td>3Q 2013 List of PMP accounts tracking toward termination and fee forfeiture on October 15</td>
-            </tr>
-          <tbody>
-          </tbody>
-          
-          <tbody>
-            <tr>
-              <td>Nov 03 | Attention Required</td>
-              <td>CloseButtonHere</td>
-            </tr>
-            <tr>
-              <td>3Q 2013 List of PMP accounts tracking toward termination and fee forfeiture on October 15</td>
-            </tr>
-          <tbody>
-          </tbody>
-          
-          <tbody>
-            <tr>
-              <td>Nov 04 | Alert</td>
-              <td>CloseButtonHere</td>
-            </tr>
-            <tr>
-              <td>3Q 2013 List of PMP accounts tracking toward termination and fee forfeiture on October 15</td>
-            </tr>
-          <tbody>
-          </tbody>
-          
-          <tbody>
-            <tr>
-              <td>Nov 05 | Alert</td>
-              <td>CloseButtonHere</td>
-            </tr>
-            <tr>
-              <td>3Q 2013 List of PMP accounts tracking toward termination and fee forfeiture on October 15</td>
-            </tr>
-          <tbody>
-          </tbody>
-          
-        </table>
-        </td>
-        
-        </tr>
-    </tbody>
-    </table>
-    
-    
-    
-
+<div class="comm-pagination">
+	<h1>dotshere</h1>
+	<ul class="dots test">
+		<li class="dot"><a href="">Previous</a></li>
+		<li class="dot"><a href="">Next</a></li>
+	</ul>
+</div>
