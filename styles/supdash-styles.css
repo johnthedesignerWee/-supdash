@@ -2,7 +2,6 @@
 /* CSS Document */
 
 @import 'ubs-global-styles.css';
-@import 'icons.css';
 
 @import 'dropkick.css';
 
@@ -200,6 +199,16 @@ td .icon-flag { color:#556996;}
     text-transform: uppercase;
 }
 
+.severity {
+    background-color: #d5600a;
+    border-radius: 2px 2px 2px 2px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 8.5px;
+    padding: 2px 3px;
+    text-transform: uppercase;
+}
+
 
 .red { color:#e54e4b }
 .green { color:#666600 }
@@ -214,28 +223,47 @@ td .icon-flag { color:#556996;}
 /**************************************************
 						 $topnav 
 **************************************************/
-.topnav { margin-top: 12px;}
+.topnav { 
+	margin: 12px 0 24px 0;
+	overflow:auto;
+	}
 
 /******************************************
 			$overview box 
 ********************************************/
-.overview, .comms {
-	margin-top: 24px;
-	-moz-border-radius: 4px 4px 0 0;
-	-webkit-border-radius:  4px 4px 0 0;
-	border-radius:  4px 4px 0 0; /* future proofing */
-	-khtml-border-radius:  4px 4px 0 0; /* for old Konqueror browsers */
+.overview, .comms, .performance{
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius:  4px 4px 4px 4px;
+	border-radius:  4px 4px 4px 4px; /* future proofing */
+	-khtml-border-radius:  4px 4px 4px 4px; /* for old Konqueror browsers */
+	border: 1px solid #949494;
 }
 .overview { background:url('../images/tilebg-overviewtop.png') repeat-x;}
-.comms { background:url('../images/tilebg-commstop.png') repeat-x;}
+.comms { background:url('../images/tilebg-blue.png') repeat-x;}
+.performance { background:url('../images/tilebg-blue.png') repeat-x;}
 
-.overview h1, .comms h1 {
+.overview h1, .performance h1, .comms h1 {
 	font-size: 15px; 
 	color: #ffffff;
-	text-shadow: 1px 1px 1px #2e2e2e;
-	margin: 8px 0 4px 8px;
+	text-shadow: 0 -1px 1px rgba(46, 46, 46, .5);
+	padding: 6px 0 2px 6px;
 }
 
+.onc {
+	margin-bottom: 12px;
+}
+
+.performance .filters {
+	-moz-border-radius: 0 0 4px 4px;
+	-webkit-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px; /* future proofing */
+	-khtml-border-radius: 0 0 4px 4px; /* for old Konqueror browsers */
+
+}
+
+.comms h1 {
+	font-size: 12px; 
+}
 
 /**********************************************
 						$filters 
@@ -255,7 +283,7 @@ fieldset { border: none; padding:0;}
 
 .filters th, .filters td { padding-left:8px; }
 
-.filters a.button.secondary { 
+.filters a.button .secondary { 
 	font-weight: bold;
 	padding: 5px 10px;
 }
@@ -280,170 +308,138 @@ fieldset { border: none; padding:0;}
 /******************************************
 			$comms box 
 ********************************************/
+.comms {
+	background-color: #fff;
+}
 
+.communication{
+	padding: 12px;
+	border-bottom: 1px solid #ccc;
+}
 
+.communication:hover {
+	cursor: pointer;
+	background-color: #f0f0f0;
+}
 
+.communication .message {
+	margin-top: 6px;
+	font-size: 10px;
+	color:#5f5f5f;
+}
+
+.communication .label{
+	margin-right:4px;
+}
+
+.comm-pagination{
+	position: relative;
+	background: #0FC;
+	-moz-border-radius: 0 0 4px 4px;
+	-webkit-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px; /* future proofing */
+	-khtml-border-radius: 0 0 4px 4px; /* for old Konqueror browsers */
+}
+.dots {
+	width: 100px;
+	height: 20px;
+}
+
+.dots .dot a {
+	position:absolute;
+    border-radius: 50% 50% 50% 50%;
+    box-shadow: none;
+	color: black;
+    height: 8px;
+    left: 2px;
+    outline: medium none;
+    overflow: hidden;
+    text-indent: 100%;
+    top: 2px;
+    transition: background-color 0.25s ease 0s, border-color 0.25s ease 0s;
+    white-space: nowrap;
+    width: 8px;
+}
+
+.dot a.active {
+    background-color: transparent;
+    border-color: #000000;
+}
+
+a {
+    color: #0088CC;
+}
+
+/******************************************
+			$mylinks 
+********************************************/
+.mylinks {
+	background: #fff;
+	padding: 8px;
+	position:relative;
+	overflow:auto;
+	border: 1px solid #c9c9c9;
+	border-top: 0;
+	-moz-border-radius: 0 0 4px 4px;
+	-webkit-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px; /* future proofing */
+	-khtml-border-radius: 0 0 4px 4px; /* for old Konqueror browsers */
+}
+
+.editlinks a {
+    border-bottom: 1px dotted #566996;
+    color: #566996;
+    font-size: 10px;
+    text-decoration: none;
+	margin: 20px 0 0 12px;
+}
+
+a {
+    text-decoration: none;
+}
+* {
+    margin: 0;
+}
+
+/******************************************
+			$flags 
+********************************************/
+.flags {
+	background: #fff;
+	padding: 8px;
+	height: 34px;
+	position:relative;
+	border-bottom: 1px solid #ccc;
+
+}
+
+.performance .filters {
+	margin-top: 0;
+	padding-bottom: 12px;
+}
 
 
 /******************************************
-			$messages 
+			$modals 
 ********************************************/
 
-.messages {margin-top: 60px;}
-.message {
-	background: #fff;
-	border-top: 1px solid #d7d7d7;
-	border-bottom: 1px solid #d7d7d7;
-	height: 30px;
-	position:relative;
+a.button.small {
+    font-size: 11px;
 }
-.message .actions {
-	position:absolute;
-	top:2px;
-	right: 8px;
-	width:180px;
-	border: 1px solid red;
-}
-.titlebar.comments {
-	padding: 12px;
+a.button {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 }
 
-.titlebar h2 {
-	color: #556996;
-	margin: 0;
-	float: left;
-	padding: 24px 24px 24px 12px;
+.ir-datagrid.models td {
+    vertical-align: middle;
 }
-
-.titlebar h2.report {
-	position:relative;
+.ir-datagrid th, .ir-datagrid td {
+    border: 1px solid #949494;
+    padding: 3px 6px;
 }
-
-.titlebar h2.report:after {
-		position: absolute;
-    		top: 45%;
-    		right: 10px;
-    		content: '';
-		   border-top: 4px solid #556996;
-		   border-left: 4px solid transparent;
-		   border-right: 4px solid transparent;
-}
-.titlebar h2.report .icon-checkmark { color:#409b46; font-size: 13px; }
-.titlebar h2:hover, h2.selected { 
-	background-color: #f0f0f0; 
-	border: 1px solid #D7D7D7;
-	padding-bottom: 22px;
-	cursor: pointer;
-}
-.titlebar h2:active, h2.selected {
-	border-bottom: 3px solid #21354f; 
-}
-
-
-.titlebar .buckets { 
-	display: none; 
-	position: absolute;
-	top:67px;
-	z-index: 18;
-}
-
-.titlebar .buckets ul li {
-	font-size: 13px;
-	font-weight: bold;
-	padding-left: 12px;
-}
-
-
-
-.bucket {
-	color: #556996;
-	margin: 0 0 12px 0;
-	font-size: 13px;
-	
-}
-
-
-.titlebar a.confirm {
-	position: absolute;
-	top:50%; 
-	right: 12px;
-	margin-top: -12px;
-	font-size: 13px;
-	background-image: -moz-linear-gradient(top, #8eae79, #546d44);
-	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #8eae79),color-stop(1, #546d44));
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#8eae79', EndColorStr='#546d44');
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#8eae79', EndColorStr='#546d44')";
-}
-
-.titlebar a.confirm.disabled {
-	background: #b4c8b4 !important;
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#b4c8b4', endColorstr='#b4c8b4')"; /* IE8 */
-	text-shadow: none;
-	color: #f2f2f2 !important;
-}
-
-.titlebar .quickcard {
-	position: absolute; 
-	top: 40%; 
-	right: 220px;
-}
-
-.titlebar .daily {
-	right: 12px;
-}
-
-.titlebar a.confirm:hover { background: #546d44; }
-
-.titlebar a.confirm:active {
-	margin-top: -11px;
-	background: #546d44;
-}
-
-.titlebar .titlebar-right {
-	height: 56px;
-	padding: 6px 12px;
-	float: right;
-	width: 260px;
-	background:url(../images/vertical-sep.png) no-repeat 74px 4px;
-	
-}
-
-.alerts-label { 
-	font-size: 10px;
-	font-weight: bold;
-	color:#949494;
-	width: 70px;
-	margin-top: 18px;
-	float:left;	
-	
-}
-.titlebar-alerts ul { margin-top: 12px; }
-.titlebar-alerts .icon-Exclamation-2 { color:#e54e4b; }
-.titlebar-alerts .icon-Exclamation-outline { color:#3bd4f0; }
-
-.titlebar .titlebar-right .titlebar-alerts {
-	font-size: 11px;
-	font-weight: normal;
-	color: #566996;
-	float:left;
-}
-
-.titlebar .titlebar-right a {
-	text-decoration: underline;
-	color: #566996;
-	padding-left: 12px;
-}
-
-.titlebar-right img {
-	padding-right: 6px;
-}
-
-.titlebar-alerts li { 
-	display:block;
-	margin-bottom: 4px;
-} 
-
-
 
 /****************** DILIMETERS ******************/
 
@@ -1191,56 +1187,8 @@ q:after {
 }
 
 
-/******* DAILY TRADES ************/
-
-.filterby {
-	width: 600px;
-	margin: 15px auto 0 auto;
-	position: relative;
-}
-.filterby ul {
-	margin-top: 3px;
-}
-.clearfilters { 
-	position: absolute;
-	right: 8px;
-	top: 1px;
-	color: #949494;
-	font-size: 9px;
-}
-.clearfilters:hover { 
-	cursor: pointer;
-	color: #556996;
-
-}
-.filterby .new {
-	position: absolute;
-	top: 18px;
-	right: 18px;
-
-}
-
-.filterby li { 
-	font-size:10px;
-	color: #2e2e2e;
-	margin-right: 8px;
-	background: #eeebe2;
-	border-radius: 3px;
-	padding: 2px 3px;
-	        border-radius: 3px; /* future proofing */
-	   -moz-border-radius: 3px;
-	 -khtml-border-radius: 3px; /* for old Konqueror browsers */
-	-webkit-border-radius: 3px;
-}
 
 
-.filterby .icon-filter { color: inherit;}
-
-
-/******* 3Level Report (eg. Better Price ) ************/
-.account.bp {
-	margin-bottom: 12px;
-}
 
 
 
