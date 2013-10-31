@@ -33,7 +33,7 @@
 <span class="icon-calendar"></span>
                         </td>
                         <td>
-                             <select name="complex" class="default" tabindex="2">
+                             <select name="complex2" class="default" tabindex="2">
                                 <option value="">Select a Complex…</option>
                                 <option value="AU">Australia</option>
                                 <option value="CA">Canada</option>
@@ -42,7 +42,7 @@
                             </select>
                         </td>
                         <td>
-                             <select name="branch" class="default" tabindex="2">
+                             <select name="branch2" class="default" tabindex="2">
                                 <option value="">Select a Branch…</option>
                                 <option value="AU">Australia</option>
                                 <option value="CA">Canada</option>

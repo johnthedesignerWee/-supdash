@@ -1,14 +1,20 @@
-<div id="ir-popup">
-    <div class="header">
-		<h2><span class="icon-remove" aria-hidden="true"></span>Customize Items for “My Links” Menu
-		</h2>
-    </div>
-    
-    <hr>
-    
-    <div class="body">
-		<br>
-			<table class="ir-datagrid models">
+
+<!-- 
+*********   MODAL : Edit Links *************************************************************************************
+******************************************************************************************************************
+-->
+
+<section class="semantic-content" id="edit-links" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+
+    <div class="modal-inner modal">
+        <header id="modal-label" class="header"><h2><span class="icon-chat"></span>Comments</h2><!-- Header --></header>
+                    <?php include("_includes/review-item.php"); ?>
+        <div class="modal-content">
+
+            
+            <h2><span class="icon-remove" aria-hidden="true"></span>Customize Items for “My Links” Menu</h2>
+            
+            <table class="datagrid">
                 <thead>
                     <tr>
                         <th id="..." scope="col"></th>
@@ -77,13 +83,14 @@
            </tbody>
 
 </table>
-		<br>
-	</div>
-    
- 	<div class="footer">
-		<a class="button secondary small left" href="#"><span>Cancel</span></a>
- 		<div>
-        	<a class="button small" href="#"><span>Save</span>
-        	</a>
+                
+        </div>
+        <div class="footer">
+            <a class="button secondary left" id="close-btn" rel="modal:close" href="#close-modal"><span>Close</span></a>  
+            <a class="button" id="comment-btn" rel="modal:close" href="#close-modal"><span class="icon-chat"></span><span>Comment</span></a> 
+        </div>
     </div>
-</div>
+
+    <a href="#!" class="modal-close" title="Close this modal" data-close="Close" data-dismiss="modal">×</a>
+</section><!-- /Modal:coment -->
+

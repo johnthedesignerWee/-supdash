@@ -81,11 +81,11 @@
       </table>
       <div class="mylinks">
             <select name="mylinks" class="default" tabindex="2">
-            <option value="">My Links</option>
-            <option value="">Ipsum</option>
-            <option value="">Della</option>
-            <option value="">Fiore</option>
-            <option value="">Conne</option>
+            <option value="a">My Links</option>
+            <option value="b">Ipsum</option>
+            <option value="c">Della</option>
+            <option value="d">Fiore</option>
+            <option value="e">Conne</option>
             </select>
 
 		<div class="editlinks">
