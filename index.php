@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/tooltipster.css"/>
     <link rel="stylesheet" href="styles/modal.css"/>
     <script type="text/javascript" src="scripts/jquery-1.10.1.min.js"></script>
-    <script type="text/javascript" src="scripts/bmss-behaviors.js"></script>
+    <script type="text/javascript" src="scripts/supdash-behaviors.js"></script>
     <script type="text/javascript" src="scripts/jquery.dropkick-min.js"></script>
     <script type="text/javascript" src="scripts/jquery.tooltipster.min.js"></script>
     <script type="text/javascript" src="scripts/modal.js"></script>

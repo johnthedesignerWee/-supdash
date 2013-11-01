@@ -174,6 +174,7 @@ div.layout-978:after {
 /****************** ICONS & STATUS INDICATORS ************************/
 
 
+
 .severity {
     background-color: #d5600a;
     border-radius: 2px 2px 2px 2px;
@@ -254,7 +255,15 @@ fieldset { border: none; padding:0;}
 	font-weight: bold;
 	padding: 5px 10px;
 }
-
+.texxt {
+	border: 1px solid #c7c7c7; 
+	padding: 6px 8px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius:3px; /* future proofing */
+	-khtml-border-radius: 3px; /* for old Konqueror browsers */
+ 
+}
 
 
 #acct-search { width: 200px;}
@@ -396,63 +405,53 @@ a.button {
     padding: 3px 6px;
 }
 
-/****************** DILIMETERS ******************/
+/****************** ADIN ******************/
+/******************************************
+			$announcement 
+********************************************/
 
-h3 {
-    text-align: center;
-    display: table;
-    width: 100%;
-}
-h3 > span, h3:before, h3:after {
-    display: table-cell;
-}
-h3:before, h3:after {
-    background: url('../images/dotted.png') repeat-x center;
-    width:auto;
-    content: ' ';
+.title {
+	color: #556996;
+	margin-bottom: 12px;
+	position: relative;
 }
 
-h3:before {
-	width:8%;
+.title .actions {
+	overflow: auto;
+	width: 312px;
+	position: absolute;
+	top: 1px;
+	right:12px;
 }
 
-h3:after {
-	width:92%;
+.announcement {
+	background: #fff;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 6px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+.announcement:hover {
+	background: #FFFAF0;
+	cursor: pointer;
 }
 
-
-h3 > span {
-    white-space: nowrap;
-    padding: 0 4px;
+.announcement .msg {
+	width: 86%;
 }
 
-h3 span.label {
-	font-weight:normal;
+.announcement .actions {
+	position: absolute;
+	top: 44%;
+	right: 4px;
+	color: #556996;
+	font-size: 11px;
 }
 
-span.branch {
-	color: #2e2e2e;
-	font-size:12px;
-	font-weight:bold;
-}	
-
-.branch-sep h3 { margin: 24px 0 12px 0; }
-
-.quick-items { 
-	margin-top: 12px; 
-	text-align: right;
-	padding-right: 8px;
-}
-	
-.violation-block {
-	background-color: #ddd;
-	padding: 3px;
-	border-radius: 3px;
-	margin-bottom: 15px;
-}
-
-
-
+.announcement .actions .action { margin-right: 4px; padding:6px;  }
+.action:hover { background: #556996; border-radius: 3px; cursor: pointer; color: #fff;}
 
 div.col9 { 
 	width:742px;
