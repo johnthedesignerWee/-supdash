@@ -81,7 +81,7 @@ textarea {
 
 .test {
 	border: 1px solid red;
-	background-color:#FCC;	
+	background-color:#FCC !important;	
 
 }
 
@@ -236,7 +236,7 @@ div.layout-978:after {
 /**********************************************
 						$filters 
 *********************************************/
-.filters, .supdash-footer {
+.filters, .supdash-footer, .recipients {
 	background: url('../images/pattern-head-gray.png') 0 0;
 	position:relative;
 }
@@ -334,9 +334,7 @@ fieldset { border: none; padding:0;}
     border-color: #000000;
 }
 
-a {
-    color: #0088CC;
-}
+
 
 /******************************************
 			$mylinks 
@@ -405,7 +403,9 @@ a.button {
     padding: 3px 6px;
 }
 
-/****************** ADIN ******************/
+/****************** ADMIN ******************/
+
+
 /******************************************
 			$announcement 
 ********************************************/
@@ -424,23 +424,123 @@ a.button {
 	right:12px;
 }
 
-.announcement {
+.announcement, .announcement-editor {
 	background: #fff;
     position: relative;
     overflow: hidden;
-    margin-bottom: 6px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-    padding: 12px;
-    border: 1px solid #ccc;
+    margin-bottom: 12px;
+    //box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    border: 2px solid #ccc;
 }
+
+.announcement { padding: 12px; }
 .announcement:hover {
-	background: #FFFAF0;
+	background: #eeebe2;
+	cursor: pointer;
+}
+.announcement .msg { 
+	width: 86%; 
+	line-height: 18px;
+	font-size: 12px;
+	color: #666;
+	 }
+
+/****************** EDITOR ******************/
+
+.recipients {
+	min-height: 52px;
+
+}
+.location, .audience { padding: 12px; }
+.location:before, .audience:before {
+	font-size: 10px;
+	font-weight: bold; 
+	color: #949494;
+	margin-right: 12px;
+} 
+.location:before { content: "LOCATION:"; }
+.audience:before { content: "AUDIENCE:"; } 
+.announcement-editor .icon-plus { padding: 3px 6px; color: #556996;}
+.location a, .audience a, .icon-plus:hover {
+	padding: 3px 6px;
+	background: #556996;
+	color: #fff;
+	border-radius: 2px 2px 2px 2px;
+	font-size: 10px;
+	margin-right: 6px;
 	cursor: pointer;
 }
 
-.announcement .msg {
-	width: 86%;
+.icon-plus { float:right; margin-right: 50px;}
+.icon-plus:hover { margin-right: 50px;}
+
+.location-selector { 
+	position: absolute;
+	width: 960px;
+	z-index: 22;
+	top: 38px;
+	left: 6px;
+	border: 1px solid #C9C9C9;
+	background: #fff;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	border-radius: 4px 4px 4px 4px;
+	-moz-box-shadow: 0px 0px 2px rgba(68,68,68,0.3);
+	-webkit-box-shadow: 0px 0px 2px rgba(68,68,68,0.3);
+	box-shadow: 0px 0px 2px rgba(68,68,68,0.3);
 }
+
+.arrow_box {
+	position: relative;
+	background: #fff;
+
+}
+.arrow_box:after, .arrow_box:before {
+	bottom: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #fff;
+	border-width: 8px;
+	right: 6%;
+	margin-left: -8px;
+}
+.arrow_box:before {
+	border-color: rgba(201, 201, 201, 0);
+	border-bottom-color: #C9C9C9;
+	border-width: 9px;
+	right: 6%;
+	margin-left: -9px;
+}
+
+.division, .region, .complex, .branch {
+	width: 22%;
+	padding: 12px;
+	float: left;
+}
+
+.announcement-editor h5 { color: #949494; font-size: 10px; padding-bottom: 6px;}
+
+/* announcement body */
+
+.announcement-body { padding: 45px; background: #eeebe2; overflow: auto; }
+.announcement-body .metas { display: table-row; }
+.announcement-body .metas div { 
+	float: left;
+	display: table-cell;
+	margin-right: 12px;
+}
+#subject { width: 550px;}
+#pubdate, #expdate { width: 100px;}
+
+
 
 .announcement .actions {
 	position: absolute;
@@ -452,12 +552,24 @@ a.button {
 
 .announcement .actions .action { margin-right: 4px; padding:6px;  }
 .action:hover { background: #556996; border-radius: 3px; cursor: pointer; color: #fff;}
+.announcement-editor .right { position:absolute; top:12px; right:12px; z-index:20;} 
+.announcement-editor .actions {
+	clear: both;
+	overflow: auto;
+	padding: 40px 0 0 360px;
+	background: url('../images/shadow.png') no-repeat 0 18px;
+}
+
+.icon-calendar { color: #949494; margin-left: 4px; font-size: 14px; }
+.icon-calendar:hover { color: #556996; cursor: pointer;}
 
 div.col9 { 
 	width:742px;
 	 }
-div.col3 { margin-left: 4px;
-			width:230px;  }
+
+div.col3 { 
+	margin-left: 4px;
+	width:230px;  }
 	
 
 

@@ -1,0 +1,348 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Devin R. Olsen - Pure CSS Menu &amp; Infinite Sub Menus</title>
+<script type="text/javascript" src="scripts/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="scripts/supdash-behaviors.js"></script>
+
+<style type="text/css">
+#nav, .nav, #nav .nav li { margin:0px; padding:0px; }
+#nav li {float:left; display:inline; cursor:pointer; list-style:none; padding:0px 10px 0px 10px; border:1px #000 solid; position:relative; width:222px; margin-left: 30px; }
+#nav:first-child { margin-left: 0; }
+#nav li ul.first {left:-1px; top:100%;}
+
+li, li a {color:#000; text-decoration:none;}
+#nav .nav li { width:100%; text-indent:10px; line-height:30px; margin-right:10px; border-top:1px #000 solid; border-bottom:1px #000 solid; border-left:none; border-right:none; background:#fff;}
+#nav li a {display:block; width:inherit; height:inherit;}
+
+ul.nav { display:none; }
+.dee { display: block !important;}
+
+#nav li:hover > a, #nav li:hover { color:#fff; background:#000; }
+li:hover > .nav { display:block; position:absolute; width:200px; top:-2px; left:100%; z-index:1000; border:1px #000 solid; } <!--AFTER DISPLAY IS THE IE GHOST HOVER FIX -->
+li:hover { position:relative; z-index:2000; } <!--IE7 Z-INDEX BUG FIX, MUST FALL AFTER DISPLAY RULE -->
+</style>
+
+</head>
+
+<body>
+<div style="float:left; width:978px;">
+	<ul id="nav">
+    	<li>DIVISION
+        	<ul class="nav first dee">
+            	<li><a href="#">D1</a>
+                    <ul class="nav">
+                        <li><a href="#">D1-R1</a></li>
+                        <li><a href="#">D1-R2</a>
+                            <ul class="nav">
+                                <li>Sub</li>	
+                                <li>Sub</li>
+                                <li>Sub
+                                    <ul class="nav">
+                                        <li>Sub</li>
+                                        <li>Sub</li>
+                                        <li>Sub</li>
+                                        <li>Sub
+		                                    <ul class="nav">
+		                                        <li>Sub</li>
+		                                        <li>Sub
+				                                    <ul class="nav">
+				                                        <li>Sub</li>
+				                                        <li>Sub</li>
+				                                        <li>Sub
+						                                    <ul class="nav">
+						                                        <li>Sub</li>
+						                                        <li>Sub</li>
+						                                        <li>Sub</li>
+						                                        <li>Sub
+								                                    <ul class="nav">
+								                                        <li>Sub</li>
+								                                        <li>Sub
+										                                    <ul class="nav">
+										                                        <li>Sub</li>
+										                                        <li>Sub</li>
+										                                        <li>Sub
+												                                    <ul class="nav">
+												                                        <li>Sub</li>
+												                                        <li>Sub</li>
+												                                        <li>Sub</li>
+												                                        <li>Sub
+														                                    <ul class="nav">
+														                                        <li>Sub</li>
+														                                        <li>Sub</li>
+														                                        <li>Sub</li>
+														                                        <li>Sub</li>                                                
+														                                    </ul> 															
+																						</li>                                                
+												                                    </ul> 																					
+																				</li>
+										                                        <li>Sub</li>                                                
+										                                    </ul> 																			
+																		</li>
+								                                        <li>Sub</li>
+								                                        <li>Sub</li>                                                
+								                                    </ul> 																	
+																</li>                                                
+						                                    </ul> 														
+														</li>
+				                                        <li>Sub</li>                                                
+				                                    </ul> 												
+												</li>
+		                                        <li>Sub</li>
+		                                        <li>Sub</li>                                                
+		                                    </ul> 										
+										</li>                                                
+                                    </ul> 								
+								</li>
+                                <li>Sub</li>                                                
+                            </ul>						
+						</li>
+                        <li>D1-R3</li>
+                        <li>D1-R4</li>                                                
+                    </ul> 				
+				</li>
+            	<li><a href="#">Sub</a></li>
+            	<li>Sub</li>
+            	<li>Sub</li>                                                
+            </ul>
+        </li>
+        <li>REGION
+       	<ul class="nav first">
+            	<li><a href="#">Sub</a>
+                    <ul class="nav">
+                        <li><a href="#">Sub</a></li>
+                        <li><a href="#">Sub</a>
+                            <ul class="nav">
+                                <li>Sub</li>
+                                <li>Sub</li>
+                                <li>Sub
+                                    <ul class="nav">
+                                        <li>Sub</li>
+                                        <li>Sub</li>
+                                        <li>Sub</li>
+                                        <li>Sub
+		                                    <ul class="nav">
+		                                        <li>Sub</li>
+		                                        <li>Sub
+				                                    <ul class="nav">
+				                                        <li>Sub</li>
+				                                        <li>Sub</li>
+				                                        <li>Sub
+						                                    <ul class="nav">
+						                                        <li>Sub</li>
+						                                        <li>Sub</li>
+						                                        <li>Sub</li>
+						                                        <li>Sub
+								                                    <ul class="nav">
+								                                        <li>Sub</li>
+								                                        <li>Sub
+										                                    <ul class="nav">
+										                                        <li>Sub</li>
+										                                        <li>Sub</li>
+										                                        <li>Sub
+												                                    <ul class="nav">
+												                                        <li>Sub</li>
+												                                        <li>Sub</li>
+												                                        <li>Sub</li>
+												                                        <li>Sub
+														                                    <ul class="nav">
+														                                        <li>Sub</li>
+														                                        <li>Sub</li>
+														                                        <li>Sub</li>
+														                                        <li>Sub</li>                                                
+														                                    </ul> 															
+																						</li>                                                
+												                                    </ul> 																					
+																				</li>
+										                                        <li>Sub</li>                                                
+										                                    </ul> 																			
+																		</li>
+								                                        <li>Sub</li>
+								                                        <li>Sub</li>                                                
+								                                    </ul> 																	
+																</li>                                                
+						                                    </ul> 														
+														</li>
+				                                        <li>Sub</li>                                                
+				                                    </ul> 												
+												</li>
+		                                        <li>Sub</li>
+		                                        <li>Sub</li>                                                
+		                                    </ul> 										
+										</li>                                                
+                                    </ul> 								
+								</li>
+                                <li>Sub</li>                                                
+                            </ul>						
+						</li>
+                        <li>Sub</li>
+                        <li>Sub</li>                                                
+                    </ul> 				
+				</li>
+            	<li><a href="#">Sub</a></li>
+            	<li>Sub</li>
+            	<li>Sub</li>                                                
+            </ul>		
+		</li>
+        <li>COMPLEX
+       	<ul class="nav first">
+            	<li><a href="#">Sub</a>
+                    <ul class="nav">
+                        <li><a href="#">Sub</a></li>
+                        <li><a href="#">Sub</a>
+                            <ul class="nav">
+                                <li>Sub</li>
+                                <li>Sub</li>
+                                <li>Sub
+                                    <ul class="nav">
+                                        <li>Sub</li>
+                                        <li>Sub</li>
+                                        <li>Sub</li>
+                                        <li>Sub
+		                                    <ul class="nav">
+		                                        <li>Sub</li>
+		                                        <li>Sub
+				                                    <ul class="nav">
+				                                        <li>Sub</li>
+				                                        <li>Sub</li>
+				                                        <li>Sub
+						                                    <ul class="nav">
+						                                        <li>Sub</li>
+						                                        <li>Sub</li>
+						                                        <li>Sub</li>
+						                                        <li>Sub
+								                                    <ul class="nav">
+								                                        <li>Sub</li>
+								                                        <li>Sub
+										                                    <ul class="nav">
+										                                        <li>Sub</li>
+										                                        <li>Sub</li>
+										                                        <li>Sub
+												                                    <ul class="nav">
+												                                        <li>Sub</li>
+												                                        <li>Sub</li>
+												                                        <li>Sub</li>
+												                                        <li>Sub
+														                                    <ul class="nav">
+														                                        <li>Sub</li>
+														                                        <li>Sub</li>
+														                                        <li>Sub</li>
+														                                        <li>Sub</li>                                                
+														                                    </ul> 															
+																						</li>                                                
+												                                    </ul> 																					
+																				</li>
+										                                        <li>Sub</li>                                                
+										                                    </ul> 																			
+																		</li>
+								                                        <li>Sub</li>
+								                                        <li>Sub</li>                                                
+								                                    </ul> 																	
+																</li>                                                
+						                                    </ul> 														
+														</li>
+				                                        <li>Sub</li>                                                
+				                                    </ul> 												
+												</li>
+		                                        <li>Sub</li>
+		                                        <li>Sub</li>                                                
+		                                    </ul> 										
+										</li>                                                
+                                    </ul> 								
+								</li>
+                                <li>Sub</li>                                                
+                            </ul>						
+						</li>
+                        <li>Sub</li>
+                        <li>Sub</li>                                                
+                    </ul> 				
+				</li>
+            	<li><a href="#">Sub</a></li>
+            	<li>Sub</li>
+            	<li>Sub</li>                                                
+            </ul>		
+		</li>
+        <li>BRANCH
+       	<ul class="nav first">
+            	<li><a href="#">Sub</a>
+                    <ul class="nav">
+                        <li><a href="#">Sub</a></li>
+                        <li><a href="#">Sub</a>
+                            <ul class="nav">
+                                <li>Sub</li>
+                                <li>Sub</li>
+                                <li>Sub
+                                    <ul class="nav">
+                                        <li>Sub</li>
+                                        <li>Sub</li>
+                                        <li>Sub</li>
+                                        <li>Sub
+		                                    <ul class="nav">
+		                                        <li>Sub</li>
+		                                        <li>Sub
+				                                    <ul class="nav">
+				                                        <li>Sub</li>
+				                                        <li>Sub</li>
+				                                        <li>Sub
+						                                    <ul class="nav">
+						                                        <li>Sub</li>
+						                                        <li>Sub</li>
+						                                        <li>Sub</li>
+						                                        <li>Sub
+								                                    <ul class="nav">
+								                                        <li>Sub</li>
+								                                        <li>Sub
+										                                    <ul class="nav">
+										                                        <li>Sub</li>
+										                                        <li>Sub</li>
+										                                        <li>Sub
+												                                    <ul class="nav">
+												                                        <li>Sub</li>
+												                                        <li>Sub</li>
+												                                        <li>Sub</li>
+												                                        <li>Sub
+														                                    <ul class="nav">
+														                                        <li>Sub</li>
+														                                        <li>Sub</li>
+														                                        <li>Sub</li>
+														                                        <li>Sub</li>                                                
+														                                    </ul> 															
+																						</li>                                                
+												                                    </ul> 																					
+																				</li>
+										                                        <li>Sub</li>                                                
+										                                    </ul> 																			
+																		</li>
+								                                        <li>Sub</li>
+								                                        <li>Sub</li>                                                
+								                                    </ul> 																	
+																</li>                                                
+						                                    </ul> 														
+														</li>
+				                                        <li>Sub</li>                                                
+				                                    </ul> 												
+												</li>
+		                                        <li>Sub</li>
+		                                        <li>Sub</li>                                                
+		                                    </ul> 										
+										</li>                                                
+                                    </ul> 								
+								</li>
+                                <li>Sub</li>                                                
+                            </ul>						
+						</li>
+                        <li>Sub</li>
+                        <li>Sub</li>                                                
+                    </ul> 				
+				</li>
+            	<li><a href="#">Sub</a></li>
+            	<li>Sub</li>
+            	<li>Sub</li>                                                
+            </ul>		
+		</li>
+    </ul>
+</div>   
+
+
+</body></html>

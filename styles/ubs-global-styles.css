@@ -47,6 +47,7 @@ a.close:active {
 }
 
 .right { float: right;}
+.in-line { display:inline-block;}
 
 /* Fonts */
 
