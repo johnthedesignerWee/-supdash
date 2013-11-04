@@ -30,9 +30,9 @@
 </div>
 
 <div class="comm-pagination">
-	<h1>dotshere</h1>
-	<ul class="dots test">
-		<li class="dot"><a href="">Previous</a></li>
-		<li class="dot"><a href="">Next</a></li>
+	<ul class="dots">
+		<li class="dot"><img src="images/transparent.png" height="16" width="16"></li>
+		<li class="dot"><img src="images/transparent.png" height="16" width="16"></li>
+        <li class="dot selected"><img src="images/transparent.png" height="16" width="16"></li>
 	</ul>
 </div>

@@ -87,9 +87,11 @@
             <option value="d">Fiore</option>
             <option value="e">Conne</option>
             </select>
+            <a class="call-modal" href="#edit-links">
+            <div class="edit-links">
+                <span aria-hidden="true" class="icon-pencil"></span>
+                <span>Edit links</span>
+            </div>
+            </a>
 
-		<div class="editlinks">
-			<span class="icon-edit"></span>
-            <a class="call-modal" href="#edit-links"><span aria-hidden="true"  class="icon-pencil"></span>Edit Links</a>
-		</div>
       </div>

@@ -1,5 +1,16 @@
 // JavaScript Document
 $(function() {
+
+	$('.spt-message').click(function() {
+		$(".first-msg").replaceWith( $( ".spt-message-editor-new" )  );
+		$('.spt-message-editor-new').removeClass('hide');
+	});
+
+	$('.wmf-message').click(function() {
+		$(".first-msg").replaceWith( $( ".announcement-editor-new" )  );
+		$('.announcement-editor-new').removeClass('hide');
+	});
+
 	$('.addloc').click(function() {
 		$('.location-selector').fadeToggle("fast");
 		console.log("holler!");
@@ -15,8 +26,6 @@ $(function() {
 	  $(this).parents(".announcement").replaceWith( $( ".announcement-editor" )  );
 
 	  $('.announcement-editor').removeClass('hide');
-	  	  console.log(this);
-
 	});
 
 	$('.announcement-editor .close').click(function() {

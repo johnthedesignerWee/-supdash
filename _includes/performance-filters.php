@@ -13,7 +13,7 @@
                     <tr>                
                         <th><span class="label">START DATE</span></th>
                         <th><span class="label">END DATE</span></th>
-                        <th><span class="label">FAID OR ACCOUNT NUMBER</span></th>
+                        <th><span class="label">FAID/ACCOUNT#</span></th>
                         <th><span class="label">COMPLEX</span></th>
                         <th><span class="label">BRANCH</span></th>
                         <th><span class="label">RED FLAGS</span></th>
@@ -29,12 +29,12 @@
 <span class="icon-calendar"></span>
                         </td>
                         <td>
-                            <input id="end-date" class="texxt shadow1" placeholder="FAID or Account Number" value="" name="subject">
+                            <input id="end-date" class="texxt shadow1" placeholder="FAID/Account#" value="" name="subject">
 <span class="icon-calendar"></span>
                         </td>
                         <td>
                              <select name="complex2" class="default" tabindex="2">
-                                <option value="">Select a Complex…</option>
+                                <option value="">Complex 1</option>
                                 <option value="AU">Australia</option>
                                 <option value="CA">Canada</option>
                                 <option value="DE">Germany</option>
@@ -43,7 +43,7 @@
                         </td>
                         <td>
                              <select name="branch2" class="default" tabindex="2">
-                                <option value="">Select a Branch…</option>
+                                <option value="">Branch 1</option>
                                 <option value="AU">Australia</option>
                                 <option value="CA">Canada</option>
                                 <option value="DE">Germany</option>
@@ -52,7 +52,7 @@
                         </td>
                         <td>
                              <select name="redflags" class="default" tabindex="2">
-                                <option value="">Red Flags…</option>
+                                <option value="">Flag 1</option>
                                 <option value="AU">Australia</option>
                                 <option value="CA">Canada</option>
                                 <option value="DE">Germany</option>

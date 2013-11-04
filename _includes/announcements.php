@@ -1,3 +1,4 @@
+<div class="first-msg"></div>
 <div class="announcement">
     <span class="date label">Oct 13, 2013</span>
     <p class="msg">

@@ -31,7 +31,7 @@
                             <option value="i">NYC-WE</option>
                             <option value="j">NYC-1285</option>
                             <option value="k">101 Park Ave</option>
-            			       </select>
+            			</select>
                     </td>
                     <td>
                       <select name="branch" class="default" tabindex="2">

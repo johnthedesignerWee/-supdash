@@ -1,21 +1,21 @@
-<div class="announcement-editor hide">
+<div class="spt-message-editor-new hide">
     <div class="right"><a class="close" ><img width="9" height="9" alt="" src="images/x.png"></a></div>
 
     <div class="recipients">
         <div class="location">
-            <a>NYC-NE</a> <a>BOS-SO</a> <span class="icon-plus addloc"></span>
+             <span class="icon-plus addloc"></span>
         </div>
         <hr/>
         <div class="audience">
-             <a>CSA</a> <a>CAM</a> <span class="icon-plus"></span>
+             <span class="icon-plus"></span>
         </div> 
         <hr />
     </div>
     <div class="announcement-body shadow1">
         <div class="metas">
-            <div class="title">
-                <h5>SUBJECT:</h5>
-                <input id="subject" class="shadow1 title texxt" placeholder="Subject" value="" name="subject">
+            <div class="category">
+                <h5>CATEGORY:</h5>
+                <input id="category" class="shadow1 title texxt" value="" name="cat">
             </div>
             <div class="date">
                 <h5>PUBLISH DATE</h5>
@@ -28,13 +28,13 @@
         </div>
         
         <div class="message">
-            <h5>MESSAGE:</h5>
-            <form method="post" class="reply form">
-                <textarea rows="18"></textarea>
-            </form>
+            <h5>TITLE:</h5>
+            <input id="title" class="shadow1 title texxt" placeholder="Title" value="" name="subject">
+            <h5><span class="icon-link"></span>LINK:</h5>
+            <input id="link" class="shadow1 title texxt" placeholder="SharePoint link" value="" name="subject">
         </div>
        
-        <div class="actions"> <a class="button secondary">Cancel </a><a class="button">Re-Publish</a></div>
+        <div class="actions"> <a class="button secondary">Cancel </a><a class="button">Publish</a></div>
     </div>    
 
 

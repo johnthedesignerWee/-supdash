@@ -302,45 +302,22 @@ fieldset { border: none; padding:0;}
 
 .comm-pagination{
 	position: relative;
-	background: #0FC;
 	-moz-border-radius: 0 0 4px 4px;
 	-webkit-border-radius: 0 0 4px 4px;
 	border-radius: 0 0 4px 4px; /* future proofing */
 	-khtml-border-radius: 0 0 4px 4px; /* for old Konqueror browsers */
 }
-.dots {
-	width: 100px;
-	height: 20px;
-}
 
-.dots .dot a {
-	position:absolute;
-    border-radius: 50% 50% 50% 50%;
-    box-shadow: none;
-	color: black;
-    height: 8px;
-    left: 2px;
-    outline: medium none;
-    overflow: hidden;
-    text-indent: 100%;
-    top: 2px;
-    transition: background-color 0.25s ease 0s, border-color 0.25s ease 0s;
-    white-space: nowrap;
-    width: 8px;
-}
-
-.dot a.active {
-    background-color: transparent;
-    border-color: #000000;
-}
-
-
+.dots { padding: 14px 70px;}
+.dots li { display: inline; }
+.dots li.dot { background: url('../images/dots.png') 0 0 no-repeat; cursor: pointer; }
+.dots li.dot.selected { background: url('../images/dots.png') 0 -16px no-repeat; cursor: pointer; }
 
 /******************************************
 			$mylinks 
 ********************************************/
 .mylinks {
-	background: #fff;
+	background: #dde4d2;
 	padding: 8px;
 	position:relative;
 	border: 1px solid #c9c9c9;
@@ -352,12 +329,26 @@ fieldset { border: none; padding:0;}
 	height: 30px;
 }
 
-.editlinks a {
-    border-bottom: 1px dotted #566996;
+
+.edit-links{
     color: #566996;
     font-size: 10px;
-    text-decoration: none;
-	margin: 20px 0 0 12px;
+    padding: 4px 6px;
+	white-space: nowrap;
+    position: absolute;
+    left: 120px;
+    top: 25%;
+}
+
+.edit-links:hover {
+	color: #fff;
+	background: #556996;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px; /* future proofing */
+	-khtml-border-radius: 3px; /* for old Konqueror browsers */
+	cursor: pointer;
+
 }
 
 
@@ -424,7 +415,7 @@ a.button {
 	right:12px;
 }
 
-.announcement, .announcement-editor {
+.announcement, .announcement-editor, .announcement-editor-new, .spt-message-editor-new {
 	background: #fff;
     position: relative;
     overflow: hidden;
@@ -460,7 +451,7 @@ a.button {
 } 
 .location:before { content: "LOCATION:"; }
 .audience:before { content: "AUDIENCE:"; } 
-.announcement-editor .icon-plus { padding: 3px 6px; color: #556996;}
+.announcement-editor .icon-plus, .announcement-editor-new .icon-plus, .spt-message-editor-new .icon-plus { padding: 3px 6px; color: #556996;}
 .location a, .audience a, .icon-plus:hover {
 	padding: 3px 6px;
 	background: #556996;
@@ -470,6 +461,14 @@ a.button {
 	margin-right: 6px;
 	cursor: pointer;
 }
+
+.location a:after {
+	content: " x";
+	margin-left: 6px;	
+	color: #a5b9d1;
+	border-left: 1px dotted #a5b9d1;
+}
+
 
 .icon-plus { float:right; margin-right: 50px;}
 .icon-plus:hover { margin-right: 50px;}
@@ -526,7 +525,25 @@ a.button {
 	float: left;
 }
 
-.announcement-editor h5 { color: #949494; font-size: 10px; padding-bottom: 6px;}
+.location-selector ul { margin: 12px 0;  }
+.location-selector li { 
+	padding: 4px 6px; 
+	margin-bottom:6px; 
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	border-radius: 4px 4px 4px 4px; /* future proofing */
+	-khtml-border-radius: 4px 4px 4px 4px; /* for old Konqueror browsers */  
+}
+.location-selector li:hover { 
+	background: #556996;
+	color: #fff;
+	cursor: pointer;
+}
+.location-selector li span { float: right;}
+.location-selector .selected { background: #ccc;}
+.location-selector .footer { clear:both; padding: 12px;}
+.announcement-editor h5, .announcement-editor-new h5, .spt-message-editor-new h5 { color: #949494; font-size: 10px; padding-bottom: 6px;}
+
 
 /* announcement body */
 
@@ -539,6 +556,7 @@ a.button {
 }
 #subject { width: 550px;}
 #pubdate, #expdate { width: 100px;}
+#title, #link { width: 840px;}
 
 
 
@@ -551,9 +569,17 @@ a.button {
 }
 
 .announcement .actions .action { margin-right: 4px; padding:6px;  }
-.action:hover { background: #556996; border-radius: 3px; cursor: pointer; color: #fff;}
-.announcement-editor .right { position:absolute; top:12px; right:12px; z-index:20;} 
-.announcement-editor .actions {
+.action:hover { 
+	background: #556996; 
+	cursor: pointer; 
+	color: #fff;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px; /* future proofing */
+	-khtml-border-radius: 3px; /* for old Konqueror browsers */
+}
+.announcement-editor .right, .announcement-editor-new .right, .spt-message-editor-new .right { position:absolute; top:12px; right:12px; z-index:20;} 
+.announcement-editor .actions, .announcement-editor-new .actions, .spt-message-editor-new .actions {
 	clear: both;
 	overflow: auto;
 	padding: 40px 0 0 360px;

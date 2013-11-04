@@ -1,13 +1,13 @@
-<div class="announcement-editor hide">
+<div class="announcement-editor-new hide">
     <div class="right"><a class="close" ><img width="9" height="9" alt="" src="images/x.png"></a></div>
 
     <div class="recipients">
         <div class="location">
-            <a>NYC-NE</a> <a>BOS-SO</a> <span class="icon-plus addloc"></span>
+             <span class="icon-plus addloc"></span>
         </div>
         <hr/>
         <div class="audience">
-             <a>CSA</a> <a>CAM</a> <span class="icon-plus"></span>
+             <span class="icon-plus"></span>
         </div> 
         <hr />
     </div>
@@ -34,7 +34,7 @@
             </form>
         </div>
        
-        <div class="actions"> <a class="button secondary">Cancel </a><a class="button">Re-Publish</a></div>
+        <div class="actions"> <a class="button secondary">Cancel </a><a class="button">Publish</a></div>
     </div>    
 
 

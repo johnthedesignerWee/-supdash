@@ -29,8 +29,8 @@
         <div class="title">
             <h2 class="title">Communications</h2>
                 <div class="actions">
-                    <a class="button "><span class="icon-add"></span> WMF Message</a>
-                    <a class="button "><span class="icon-add"></span> Sharepoint Message</a>
+                    <a class="button wmf-message"><span class="icon-add"></span> WMF Message</a>
+                    <a class="button spt-message"><span class="icon-add"></span> Sharepoint Message</a>
                 </div>
             <hr/>
         </div>
@@ -38,6 +38,9 @@
         <?php include_once("_includes/announcements.php"); ?>
         <?php include_once("_includes/announcement-editor.php"); ?>
         <?php include_once("_includes/announcement-edited.php"); ?>
+        <?php include_once("_includes/announcement-editor-new.php"); ?>
+        <?php include_once("_includes/spt-message-editor-new.php"); ?>
+
 
     </div>
 
