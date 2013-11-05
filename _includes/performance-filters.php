@@ -59,7 +59,7 @@
                                 <option value="JP">Japan</option>
                             </select>
                         </td>
-                        <td><a class="button secondary"><span class="icon-cog"</span>Go</a></td>
+                        <td><a class="button secondary">Go</a></td>
                     </tr>
                  </table>
                 

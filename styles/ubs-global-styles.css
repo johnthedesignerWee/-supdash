@@ -236,31 +236,6 @@ a.button.icon.mm.disabled {
 		   border-top-color: #556996;
 }
 
-.dropdown.primary {
-	color: #fff;
-	background: -moz-linear-gradient(top, #b3bfdb, #3c5da6);
-	background: -webkit-gradient(linear,left top,left bottom,color-stop(0, #b3bfdb),color-stop(1, #3c5da6));
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#b3bfdb', EndColorStr='#3c5da6');
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#b3bfdb', EndColorStr='#3c5da6')";
-	text-shadow: none;
-	border: 1px solid #556996;
-}
-
-
-.dropdown.primary:after { border-top: 4px solid #fff; }
-
-.dropdown.primary:active {
-		   border: 1px solid #21354F;
-		   border-bottom-color: #21354F;
-		   border-top-color: #21354F;
-		   -webkit-box-shadow: inset 0 1px 2px #21354F;
-		   -moz-box-shadow:    inset 0 1px 2px #21354F;
-		   box-shadow:         inset 0 1px 2px #21354F;
-			background-image: -moz-linear-gradient(top, #3c5da6, #7384ab);
-			background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #7384ab),color-stop(1, #3c5da6));
-			filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#7384ab', EndColorStr='#3c5da6');
-			-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#7384ab', EndColorStr='#3c5da6')";
-}
 
 .sortable:after {
 			content: "";

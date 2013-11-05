@@ -3,10 +3,9 @@
           	<thead>
                     <tr>
                         <th scope="col" id="...">Reports & Items</th>
-                        <th scope="col" id="..."> </th>
-                        <th scope="col" id="...">High Priority Incomplete</th>
-                        <th scope="col" id="...">Total Outstanding</th>
-                        <th scope="col" id="...">Completed</th>
+                        <th scope="col" width="140" class="high-priority-sorted">High Priority Incomplete</th>
+                        <th scope="col" width="140">Total Outstanding</th>
+                        <th scope="col" width="140">Completed</th>
                 
                     </tr>
       		</thead>
@@ -15,66 +14,57 @@
                 <tbody>
                      <tr class="overviewrow">
                         <td class="reportitem">Branch Reports</td>
-                        <td class="icon-rcircle">icon-rcircle</td>
-                        <td class="cash">18</td>
-                        <td class="cash">28</td>
-                        <td class="cash">13</td>
+                        <td class="high-priority sorted"><div class="badge">18</div></td>
+                        <td class="outstanding"><div class="badge">28</div></td>
+                        <td class="completed"><div class="badge">03</div></td>
                     </tr>
                      <tr class="overviewrow">
                         <td class="reportitem">BMSS</td>
-                        <td class="icon-rcircle"> </td>
-                        <td class="cash">10</td>
-                        <td class="cash">11</td>
-                        <td class="cash">14</td>
+                        <td class="high-priority sorted"><div class="badge">10</div></td>
+                        <td class="outstanding"><div class="badge">11</div></td>
+                        <td class="completed"><div class="badge">14</div></td>
                     </tr>
                      <tr class="overviewrow">
                         <td class="reportitem">Disburse Approval</td>
-                        <td class="icon-rcircle"> </td>
-                        <td class="cash">18</td>
-                        <td class="cash">28</td>
-                        <td class="cash">13</td>
+                        <td class="high-priority sorted"><div class="badge">18</div></td>
+                        <td class="outstanding"><div class="badge">28</div></td>
+                        <td class="completed"><div class="badge">03</div></td>
                     </tr>
                      <tr class="overviewrow">
                         <td class="reportitem">Document Approvals</td>
-                        <td class="icon-rcircle"> </td>
-                        <td class="cash">18</td>
-                        <td class="cash">28</td>
-                        <td class="cash">13</td>
+                        <td class="high-priority sorted"><div class="badge">18</div></td>
+                        <td class="outstanding"><div class="badge">12</div></td>
+                        <td class="completed"><div class="badge">02</div></td>
                     </tr>
                      <tr class="overviewrow">
                         <td class="reportitem">Home Office Requests</td>
-                        <td class="icon-rcircle"> </td>
-                        <td class="cash">18</td>
-                        <td class="cash">28</td>
-                        <td class="cash">13</td>
+                        <td class="high-priority sorted"><div class="badge">11</div></td>
+                        <td class="outstanding"><div class="badge">05</div></td>
+                        <td class="completed"><div class="badge">12</div></td>
                     </tr>
                      <tr class="overviewrow">
                         <td class="reportitem">Trade Approvals</td>
-                        <td class="icon-rcircle"> </td>
-                        <td class="cash">18</td>
-                        <td class="cash">28</td>
-                        <td class="cash">13</td>
+                        <td class="high-priority sorted"><div class="badge">22</div></td>
+                        <td class="outstanding"><div class="badge">05</div></td>
+                        <td class="completed"><div class="badge">06</div></td>
                     </tr>
                      <tr class="overviewrow">
                         <td class="reportitem">Trade Correction Approvals</td>
-                        <td class="icon-rcircle"> </td>
-                        <td class="cash">18</td>
-                        <td class="cash">28</td>
-                        <td class="cash">13</td>
+                        <td class="high-priority sorted"><div class="badge">18</div></td>
+                        <td class="outstanding"><div class="badge">28</div></td>
+                        <td class="completed"><div class="badge">03</div></td>
                     </tr>
                      <tr class="overviewrow">
                         <td class="reportitem">Managed Accash Approvals</td>
-                        <td class="icon-rcircle"> </td>
-                        <td class="cash">18</td>
-                        <td class="cash">28</td>
-                        <td class="cash">13</td>
+                        <td class="high-priority sorted"><div class="badge">16</div></td>
+                        <td class="outstanding"><div class="badge">23</div></td>
+                        <td class="completed"><div class="badge">15</div></td>
                     </tr>
                      <tr class="overviewrow">
                         <td class="reportitem">Risk/Margin Requests</td>
-                        <td class="icon-rcircle"> </td>
-                        <td class="cash">18</td>
-                        <td class="cash">28</td>
-                        <td class="cash">13</td>
+                        <td class="high-priority sorted"><div class="badge">18</div></td>
+                        <td class="outstanding"><div class="badge">28</div></td>
+                        <td class="completed"><div class="badge">03</div></td>
                     </tr>
             
                 </tbody>
