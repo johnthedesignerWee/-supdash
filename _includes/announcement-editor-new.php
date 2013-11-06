@@ -37,55 +37,7 @@
         <div class="actions"> <a class="button secondary">Cancel </a><a class="button">Publish</a></div>
     </div>    
 
-
-    <div class="location-selector hide">
-    <div class="arrow_box">
-        <div class="division">
-            <h5> DIVISION </h5>
-            <hr/>
-            <ul>
-                <li class="selected">Division 1 <span class="icon-checkmark"></span></li>
-                <li>Division 2</li>
-                <li>Division 3</li>
-                <li>Division 4 <span class="icon-arrow-right"></span></li>
-                <li>Division 5</li>
-                <li class="selected">Division 6 <span class="icon-arrow-right"></span><span class="icon-checkmark"></span> </li>
-            </ul>
-                   
-        </div>
-        <div class="region">
-            <h5> REGION </h5>
-            <hr/> 
-            <ul>
-                <li class="selected">Region 1 <span class="icon-checkmark"></span> </li>
-                <li>Region 2</li>
-                <li class="selected">Region 6 <span class="icon-arrow-right"></span><span class="icon-checkmark"></span> </li>
-                <li>Region 4 <span class="icon-arrow-right"></span></li>
-                <li>Region 5</li>
-                <li>Region 6</li>
-            </ul>   
-        </div>
-        <div class="complex">
-            <h5> COMPLEX </h5>
-            <hr/> 
-            <ul>
-                <li>Complex 1 </li>
-                <li>Complex 2</li>
-                <li class="selected">Complex 6 <span class="icon-arrow-right"></span><span class="icon-checkmark"></span> </li>
-
-
-            </ul>        
-        </div>
-        <div class="branch">
-            <h5> BRANCH </h5>
-            <hr/>     
-        </div>
-
-
-
-    </div>
-
-    </div>
+<?php include_once("_includes/location-selector.php"); ?>
 
 
 </div>

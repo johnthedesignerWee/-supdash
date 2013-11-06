@@ -1,5 +1,8 @@
 // JavaScript Document
 $(function() {
+	$('.announcement').click(function() {
+		$(this).find('p.msg').toggleClass('hide');
+	});
 
 	$('.spt-message').click(function() {
 		$(".first-msg").replaceWith( $( ".spt-message-editor-new" )  );

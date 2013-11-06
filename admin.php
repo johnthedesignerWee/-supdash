@@ -26,10 +26,10 @@
     </div>
     
     <div class="row">
-        <div class="title">
-            <h2 class="title">Communications</h2>
+        <div class="titleblock">
+            <h2 class="title">Communications Admin.</h2>
                 <div class="actions">
-                    <a class="button wmf-message"><span class="icon-add"></span> WMF Message</a>
+                    <a class="button wmf-message"><span class="icon-add"></span> WMF Alert</a>
                     <a class="button spt-message"><span class="icon-add"></span> Sharepoint Message</a>
                 </div>
             <hr/>
