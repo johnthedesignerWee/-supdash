@@ -25,15 +25,13 @@
     </div>
     
     <div class="row onc">
-        <div class="col9">
-            <div class="overview box-shadow">
-                <h1 class="transparent">Overview </h1>
-                <?php include_once("_includes/overview-filters.php"); ?>
-                <?php include_once("_includes/overview-datagridcontainer.php"); ?>
-            </div>
+        <div class="col9 overview">
+            <h1 class="transparent">Overview </h1>
+            <?php include_once("_includes/overview-filters.php"); ?>
+            <?php include_once("_includes/overview-datagridcontainer.php"); ?>
         </div>
 
-        <div class="col3 comms box-shadow">
+        <div class="col3 comms">
             <h1>From the Communications Team </h1>
             <?php include_once("_includes/comms.php"); ?>
         </div>  

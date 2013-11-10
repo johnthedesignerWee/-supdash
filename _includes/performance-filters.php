@@ -1,10 +1,10 @@
-<div class="row performance box-shadow">
+<div class="row performance">
 <h1>Performance Indicators</h1>
     <div class="flags">
     
                 <button class="dropdown" role="button">Disbursement Red Flags</button>
             
-    </div><!-- closes flags --> 
+    </div><!-- / flags --> 
        
     <div class="filters" >
         <fieldset>

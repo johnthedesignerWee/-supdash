@@ -1,9 +1,9 @@
-<div>
+
     <div class="communication">
         <span class="label">Nov 01</span><span class="severity">Action Required</span>
         <p class="message">3Q 2013 List of PMP accounts tracking toward termination and fee forfeiture on October 15</p>
         <div class="close"><span class="icon-close"></span></div>
-        </div>
+    </div>
     <a class="call-modal" href="#alert-message">
     <div class="communication">
         <span class="label">Nov 01</span><span class="severity">Attention Required</span>
@@ -45,7 +45,7 @@
         <div class="close"><span class="icon-close"></span></div>
     </div>
 
-</div>
+
 
 <div class="comm-pagination">
 	<ul class="dots">

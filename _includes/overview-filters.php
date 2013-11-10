@@ -39,11 +39,11 @@
                         <option value="b">Samford, CT</option>
                         <option value="c">Greenwich, CT</option>
                         <option value="d">Westport, CT</option>
-            			     </select>
+            		  </select>
                     </td>
                     <td>
                       <select name="FAID" class="default" tabindex="2">
-							         <option value="">FAID</option>
+							 <option value="">FAID</option>
               				<option value="AU">Australia</option>
               				<option value="CA">Canada</option>
               				<option value="DE">Germany</option>
