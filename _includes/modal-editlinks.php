@@ -8,7 +8,7 @@
 
     <div class="modal-inner modal">
         <header id="modal-label" class="header"><h2><span class="icon-pencil"></span>Edit Links</h2><!-- Header --></header>
-                    <?php include("_includes/review-item.php"); ?>
+                    
         <div class="modal-content">
 
             
