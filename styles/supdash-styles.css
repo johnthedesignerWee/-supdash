@@ -177,6 +177,17 @@ div.layout-978:after {
 	background: url('../images/th-orange.png') repeat-x !important;
 	color: #fff !important;
 }
+.high-priority-sorted:after {
+	border-left: 4px solid rgba(0, 0, 0, 0);
+    border-right: 4px solid rgba(0, 0, 0, 0);
+    border-top: 4px solid #fff;
+    content: "";
+    display: inline-block;
+    height: 0;
+    margin: 0 0 0 4px;
+    width: 0;
+
+}
 .outstanding-sorted {  
 	background: url('../images/th-yellow.png') repeat-x !important;
 	color: #fff !important;
